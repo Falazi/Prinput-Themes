@@ -2,4 +2,4 @@
 More themes for Prinput
 
 ## Neumorphism
-![name](images/neumorphism.jpg)
+![name](images/neumorphism2.jpg)
