@@ -1,5 +1,6 @@
 # Prinput-Themes
 More themes for Prinput
 
+## Basic
 ## Neumorphism
-![name](images/neumorphism2.jpg)
+## Terminal Lover
