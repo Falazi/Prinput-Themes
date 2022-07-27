@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+
+:root {
+    --radius: 0.2rem;
+    --text-padding: 1rem;
+    --background-color: rgb(54, 54, 54);
+    --shadow-color: #bebebe;
+    --highlight-color: #ffffff;
+    --text-margin: 0.8rem;
+    --border-width: 0.1rem;
+    --color: #fff;
+    --border-radius: 0.1rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", Monaco, monospace;
+    font-size: 1rem;
+    color: var(--color)
+
+}
+
+
+p {
+    margin-top: var(--text-margin);
+    margin-bottom: var(--text-margin);
+}
+
+
+body {
+    margin: auto;
+    max-width: 50rem;
+
+    background: var(--background-color);
+}
+
+input {
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 87%;
+    padding-top: calc(var(--text-padding) / 2);
+    padding-left: calc(var(--text-padding));
+    padding-right: calc(var(--text-padding) / 2);
+    padding-bottom: calc(var(--text-padding) / 2);
+    border-color: var(--color);
+    background-color: var(--background-color);
+
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    border-style: solid;
+
+
+
+}
+
+button{
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    margin-left: 1rem;
+    width: 5rem;
+    padding: calc(var(--text-padding) / 2);
+    background-color: var(--background-color);
+    border-color: var(--color);
+    border-style: solid;
+
+}
+
+button:hover{
+    filter: brightness(120%)
+}
+
+button:active{
+    filter: brightness(150%)
+}
+
+#interact{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  
+}
+
+#container {
+    position: relative;
+
+    
+    margin-top: 15vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#scrollbox {
+    /* using outline so it doesn't cut off scrollbar */
+    outline-width: var(--border-width);
+    height: 50vh;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    border-radius: var(--border-radius);
+    /*
+
+orig
+    background: var(--background-color);
+    box-shadow: 5px 5px 10px var(--shadow-color),
+        -5px -5px 10px var(--highlight-color);
+
+
+        */
+
+         outline-style: solid; 
+    outline-color: var(--color);
+
+    padding-top: var(--text-padding);
+    padding-left: var(--text-padding);
+    padding-bottom: var(--text-padding);
+    padding-right: calc(var(--text-padding) / 2);
+
+}

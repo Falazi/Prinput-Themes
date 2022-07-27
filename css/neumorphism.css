@@ -34,8 +34,11 @@ body {
 input {
     box-sizing: border-box;
     margin-top: 1rem;
-    width: 50rem;
-    padding: calc(var(--text-padding) / 2);
+    width: 87%;
+    padding-top: calc(var(--text-padding) / 2);
+    padding-left: calc(var(--text-padding));
+    padding-right: calc(var(--text-padding) / 2);
+    padding-bottom: calc(var(--text-padding) / 2);
     border: 0;
 
 
@@ -46,10 +49,41 @@ input {
 
 }
 
+button{
+    border-radius: 0.75rem;
+    margin-left: 1rem;
+    width: 5rem;
+    padding: calc(var(--text-padding) / 2);
+    border: none;
+    background: var(--background-color);
+    box-shadow:  3px 3px 6px var(--shadow-color),
+                 -3px -3px 6px var(--highlight-color);
+}
+
+button:active{
+    box-shadow: inset 3px 3px 6px var(--shadow-color),
+    inset -3px -3px 6px var(--highlight-color);
+
+}
+#interact{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  
+}
+
+#container {
+    position: relative;
+
+    
+    margin-top: 15vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 #scrollbox {
+
     height: 50vh;
-    margin-top: 15vh;
     /* overflow-y: scroll; */
     overflow-x: hidden;
     border-radius: 0.75rem;
@@ -90,7 +124,7 @@ orig
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar-track {
-    
+
     border-radius: 1rem;
     background: var(--background-color);
     box-shadow: inset 2px 2px 4px var(--shadow-color),
@@ -103,7 +137,7 @@ orig
 }
 
 *::-webkit-scrollbar-thumb {
-   border: 0.1rem solid rgba(0, 0, 0, 0);
+    border: 0.1rem solid rgba(0, 0, 0, 0);
 
     width: 0.5rem;
     border-radius: 1rem;
@@ -111,10 +145,9 @@ orig
     box-shadow: 3px 3px 5px var(--shadow-color),
         -3px -3px 5px var(--highlight-color);
     background-clip: padding-box;
-
-
+    
 }
 
 input:focus {
     outline: none !important;
-  }
+}
