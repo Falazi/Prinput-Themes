@@ -13,4 +13,4 @@ Very smooth
 ![Terminal-Lover](images/terminal-lover.png)
 Do you love the terminal? This theme is for you
 
-This theme has an extra js file that I reccomend you use, for extra terminal realness
+This theme has an extra js file that I reccomend you use, which makes sure the input box is always selected, for extra terminal realness.
